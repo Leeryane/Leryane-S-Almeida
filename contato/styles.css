@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /*Aqui estou definindo as variáveis de cores, usei o adobe color para pegar uma paleta de cores*/
+    --color-vinho: #8C1F28;
+    --color-vinho-escuro: #591C21;
+    --color-verde: #044040;
+    --color-vermelho: #D92525;
+    --color-cinza: #F2F2F2;
+    --color-azul: #0B2B40;
+}
+
+body { 
+    background-color:var(--color-azul);
+}
+
+body, textarea { 
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    border-radius: 8px;
+    width: 700px;
+}
+
+.form-box form { /*Aqui estou usando o form para estilizar o formulário*/
+    display: flex;
+    align-items: start;
+    flex-wrap: nowrap;
+    padding: 30px;
+}
+
+.form-box input, .form-box textarea {
+    width: calc(50% - 8px);
+    height: 35px;
+    border-radius: 10px;
+    border: thin solid #000;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    border: none;
+    font-size: 15px;
+}
+
+.form-box input:first-child {
+    margin-right: 8px;
+}
+
+.form-box textarea {
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+}
+
+
+.form-box button { /*aqui estou estilizando o boão de enviar mensagem*/
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--color-verde);
+    color: var(--color-cinza);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: var(--color-vinho);
+}
